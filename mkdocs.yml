@@ -1,0 +1,8 @@
+site_name: Laskin
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Index: index.md
+  - Laskin API: reference.md

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Laskin API - Laskin</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../assets/_mkdocstrings.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Laskin</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Index</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Laskin API</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#stack.laskin" class="nav-link">stack.laskin</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#stack.laskin.Laskin" class="nav-link">Laskin</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<div class="doc doc-object doc-module">
+
+
+<a id="stack.laskin"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Yksinkertainen Python-kielinen laskin-moduuli</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="stack.laskin.Laskin" class="doc doc-heading">
+        <code>Laskin</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Luokka, joka toteuttaa yksinkertaiset laskutoimitukset</p>
+<p>...</p>
+<h4 id="stack.laskin.Laskin--attributes">Attributes</h4>
+<pre><code>luku_1 : int
+    käyttäjän syöttämä lukuarvo
+luku_2 : int
+    käyttäjän syöttämä lukuarvo
+</code></pre>
+<h4 id="stack.laskin.Laskin--methods">Methods</h4>
+<pre><code>yhteenlasku(luku_1, luku_2)
+    Palauttaa syötteiden luku_1 ja luku_2 summan
+vahennyslasku(luku_1, luku_2)
+    Palauttaa syötteiden luku_1 ja luku_2 erotuksen
+kertolasku(luku_1, luku_2)
+    Palauttaa syötteiden luku_1 ja luku_2 tulon
+jakolasku(luku_1, luku_2)
+    Palauttaa syötteiden luku_1 ja luku_2 osamäärän
+</code></pre>
+
+
+        <details class="quote">
+          <summary>Source code in <code>stack\laskin.py</code></summary>
+          <pre class="highlight"><code class="language-python">class Laskin():
+    """
+    Luokka, joka toteuttaa yksinkertaiset laskutoimitukset
+
+    ...
+
+    Attributes
+    ----------
+        luku_1 : int
+            käyttäjän syöttämä lukuarvo
+        luku_2 : int
+            käyttäjän syöttämä lukuarvo
+
+    Methods
+    -------
+        yhteenlasku(luku_1, luku_2)
+            Palauttaa syötteiden luku_1 ja luku_2 summan
+        vahennyslasku(luku_1, luku_2)
+            Palauttaa syötteiden luku_1 ja luku_2 erotuksen
+        kertolasku(luku_1, luku_2)
+            Palauttaa syötteiden luku_1 ja luku_2 tulon
+        jakolasku(luku_1, luku_2)
+            Palauttaa syötteiden luku_1 ja luku_2 osamäärän
+    """
+
+    def __init__(self):
+        """
+        Laskin-luokan konstruktori
+
+        Parameters
+        ----------
+            None
+        Examples:
+            &gt;&gt;&gt; laskin = Laskin()
+            &gt;&gt;&gt; type(laskin) is Laskin
+            True
+        """
+
+
+    def yhteenlasku(self, luku_1: int, luku_2: int) -&gt; int:
+        """
+        Tämä metodi laskee luvut yhteen
+        Args:
+            luku_1 (int): kokonaisluku
+            luku_2 (int): kokonaisluku
+        Returns:
+            summa: kokonaislukujen luku_1 ja luku_2 summa
+        Examples:
+            &gt;&gt;&gt; laskin = Laskin()
+            &gt;&gt;&gt; laskin.yhteenlasku(2, 5)
+            7
+            7
+        """
+        print(luku_1+luku_2)
+        return luku_1+luku_2
+
+    def vahennyslasku(self, luku_1: int, luku_2: int) -&gt; int:
+        """
+        Tämä metodi palauttaa kahden kokonaisluvun erotuksen
+        Args:
+            luku_1 (int): kokonaisluku
+            luku_2 (int): kokonaisluku
+        Returns:
+            erotus: kokonaislukujen luku_1 ja luku_2 erotus
+        Examples:
+            &gt;&gt;&gt; laskin = Laskin()
+            &gt;&gt;&gt; laskin.yhteenlasku(5, 2)
+            3
+            3
+        """
+        print(luku_1-luku_2)
+        return luku_1-luku_2
+
+    def kertolasku(self, luku_1: int, luku_2: int) -&gt; int:
+        """
+        Tämä metodi palauttaa kahden kokonaisluvun tulon
+        Args:
+            luku_1 (int): kokonaisluku
+            luku_2 (int): kokonaisluku
+        Returns:
+            tulo: kokonaislukujen luku_1 ja luku_2 tulo
+        Examples:
+            &gt;&gt;&gt; laskin = Laskin()
+            &gt;&gt;&gt; laskin.kertolasku(2, 5)
+            10
+            10
+        """
+        print(luku_1*luku_2)
+        return luku_1*luku_2
+
+    def jakolasku(self, luku_1: int, luku_2: int) -&gt; float:
+        """
+        Tämä metodi jakaa kokonaisluvun toisella kokonaisluvulla.
+        Args:
+            luku_1 (int): kokonaisluku
+            luku_2 (int): kokonaisluku
+        Returns:
+            osamäärä (float): kokonaislukujen luku_1 ja luku_2 osamäärä
+            virhe (ZeroDivisionError): jos luku_2 on nolla
+        """
+        try:
+            print(float(luku_1/luku_2))
+            return float(luku_1/luku_2)
+        except ZeroDivisionError:
+            print("Virhe: 0 ei voi olla jakaja")
+            return ZeroDivisionError</code></pre>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="stack.laskin.Laskin.__init__" class="doc doc-heading">
+<code class="highlight language-python">__init__()</code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Laskin-luokan konstruktori</p>
+<h5 id="stack.laskin.Laskin.__init__--parameters">Parameters</h5>
+<pre><code>None
+</code></pre>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; laskin = Laskin()
+&gt;&gt;&gt; type(laskin) is Laskin
+True</code></pre>
+
+      <details class="quote">
+        <summary>Source code in <code>stack\laskin.py</code></summary>
+        <pre class="highlight"><code class="language-python">def __init__(self):
+    """
+    Laskin-luokan konstruktori
+
+    Parameters
+    ----------
+        None
+    Examples:
+        &gt;&gt;&gt; laskin = Laskin()
+        &gt;&gt;&gt; type(laskin) is Laskin
+        True
+    """</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="stack.laskin.Laskin.jakolasku" class="doc doc-heading">
+<code class="highlight language-python">jakolasku(luku_1, luku_2)</code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Tämä metodi jakaa kokonaisluvun toisella kokonaisluvulla.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>luku_1</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaisluku</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>luku_2</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaisluku</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>osamäärä</code></td>          <td>
+                <code>float</code>
+          </td>
+          <td><p>kokonaislukujen luku_1 ja luku_2 osamäärä</p></td>
+        </tr>
+        <tr>
+<td><code>virhe</code></td>          <td>
+                <code>ZeroDivisionError</code>
+          </td>
+          <td><p>jos luku_2 on nolla</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>stack\laskin.py</code></summary>
+        <pre class="highlight"><code class="language-python">def jakolasku(self, luku_1: int, luku_2: int) -&gt; float:
+    """
+    Tämä metodi jakaa kokonaisluvun toisella kokonaisluvulla.
+    Args:
+        luku_1 (int): kokonaisluku
+        luku_2 (int): kokonaisluku
+    Returns:
+        osamäärä (float): kokonaislukujen luku_1 ja luku_2 osamäärä
+        virhe (ZeroDivisionError): jos luku_2 on nolla
+    """
+    try:
+        print(float(luku_1/luku_2))
+        return float(luku_1/luku_2)
+    except ZeroDivisionError:
+        print("Virhe: 0 ei voi olla jakaja")
+        return ZeroDivisionError</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="stack.laskin.Laskin.kertolasku" class="doc doc-heading">
+<code class="highlight language-python">kertolasku(luku_1, luku_2)</code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Tämä metodi palauttaa kahden kokonaisluvun tulon</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>luku_1</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaisluku</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>luku_2</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaisluku</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>tulo</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaislukujen luku_1 ja luku_2 tulo</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; laskin = Laskin()
+&gt;&gt;&gt; laskin.kertolasku(2, 5)
+10
+10</code></pre>
+
+      <details class="quote">
+        <summary>Source code in <code>stack\laskin.py</code></summary>
+        <pre class="highlight"><code class="language-python">def kertolasku(self, luku_1: int, luku_2: int) -&gt; int:
+    """
+    Tämä metodi palauttaa kahden kokonaisluvun tulon
+    Args:
+        luku_1 (int): kokonaisluku
+        luku_2 (int): kokonaisluku
+    Returns:
+        tulo: kokonaislukujen luku_1 ja luku_2 tulo
+    Examples:
+        &gt;&gt;&gt; laskin = Laskin()
+        &gt;&gt;&gt; laskin.kertolasku(2, 5)
+        10
+        10
+    """
+    print(luku_1*luku_2)
+    return luku_1*luku_2</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="stack.laskin.Laskin.vahennyslasku" class="doc doc-heading">
+<code class="highlight language-python">vahennyslasku(luku_1, luku_2)</code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Tämä metodi palauttaa kahden kokonaisluvun erotuksen</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>luku_1</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaisluku</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>luku_2</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaisluku</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>erotus</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaislukujen luku_1 ja luku_2 erotus</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; laskin = Laskin()
+&gt;&gt;&gt; laskin.yhteenlasku(5, 2)
+3
+3</code></pre>
+
+      <details class="quote">
+        <summary>Source code in <code>stack\laskin.py</code></summary>
+        <pre class="highlight"><code class="language-python">def vahennyslasku(self, luku_1: int, luku_2: int) -&gt; int:
+    """
+    Tämä metodi palauttaa kahden kokonaisluvun erotuksen
+    Args:
+        luku_1 (int): kokonaisluku
+        luku_2 (int): kokonaisluku
+    Returns:
+        erotus: kokonaislukujen luku_1 ja luku_2 erotus
+    Examples:
+        &gt;&gt;&gt; laskin = Laskin()
+        &gt;&gt;&gt; laskin.yhteenlasku(5, 2)
+        3
+        3
+    """
+    print(luku_1-luku_2)
+    return luku_1-luku_2</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="stack.laskin.Laskin.yhteenlasku" class="doc doc-heading">
+<code class="highlight language-python">yhteenlasku(luku_1, luku_2)</code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Tämä metodi laskee luvut yhteen</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>luku_1</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaisluku</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>luku_2</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaisluku</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>summa</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>kokonaislukujen luku_1 ja luku_2 summa</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; laskin = Laskin()
+&gt;&gt;&gt; laskin.yhteenlasku(2, 5)
+7
+7</code></pre>
+
+      <details class="quote">
+        <summary>Source code in <code>stack\laskin.py</code></summary>
+        <pre class="highlight"><code class="language-python">def yhteenlasku(self, luku_1: int, luku_2: int) -&gt; int:
+    """
+    Tämä metodi laskee luvut yhteen
+    Args:
+        luku_1 (int): kokonaisluku
+        luku_2 (int): kokonaisluku
+    Returns:
+        summa: kokonaislukujen luku_1 ja luku_2 summa
+    Examples:
+        &gt;&gt;&gt; laskin = Laskin()
+        &gt;&gt;&gt; laskin.yhteenlasku(2, 5)
+        7
+        7
+    """
+    print(luku_1+luku_2)
+    return luku_1+luku_2</code></pre>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
