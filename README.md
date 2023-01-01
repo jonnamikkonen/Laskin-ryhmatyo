@@ -2,23 +2,24 @@
 
 Ryhmän henkilöt ja sähköpostit:
 ```shell=
-Maria Hiivala (PO) mariahiivala@kamk.fi
-Niko Kallatsa (dev) nikokallatsa@kamk.fi
-Olli Kaure (dev) ollikaure@kamk.fi
-Jonna Mikkonen (dev) jonnamikkonen1@kamk.fi
-Iida Mäki (dev) iidamaki1@kamk.fi
-Salli Airaksinen (dev) salliairaksinen@kamk.fi
+PO
+Henkilo A
+Henkilo B
+Henkilo C
+Henkilo D
+Jonna
+
 ```
 ## Suunnittelupalaveri
 17.11.2022 Suunnittelupalaveri/ ensimmäinen sprint starttaa
 
 Vastuut jaettu seuraavasti:
-- Laskimen runko: Niko
-- Yhteenlasku: Olli
-- Vähennyslasku: Iida
+- Laskimen runko: Henkilo A
+- Yhteenlasku: Henkilo B
+- Vähennyslasku: Henkilo C
 - Jakolasku: Jonna
-- Kertolasku: Salli
-- Projektin päivitys, ajankohtaiset merkinnät: Maria
+- Kertolasku: Henkilo D
+- Projektin päivitys, ajankohtaiset merkinnät: PO
 
 Seuraava palaveri ja 2. sprint starttaa 21.11.2022
 
